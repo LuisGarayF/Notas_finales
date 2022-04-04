@@ -1,0 +1,25 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+#logo{
+    width: 50px !important;
+}
+
+h1{
+    font-weight: 700;
+}
+
+.input-group-text{
+    font-weight: 300;
+}
+
+.col{
+    font-weight: 400;
+}
+
+.items{
+    font-weight: 300;
+}
+
+

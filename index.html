@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Notas finales</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+    <body>
+        <header class="container py-4">
+            <div class="row">
+                <h1 class="col-md-6"><i class="fa-solid fa-clipboard"></i> Notas finales</h1>
+                <span class="col-md-4"></span>
+                <span class="col-md-2 float-right"><img src="./assets/img/logo_desafio_latam.png" class="img-fluid" alt="logo desafio latam"></span>
+            </div>
+        </header>
+        <main>
+            <section class="container">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Nombre</span>
+                    <p class="mx-3 my-1"id="inputNombre"></p>
+                  </div>
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default" id="carrera">Carrera</span>
+                    <p class="mx-3 my-1"id="inputCarrera"></p>
+                  </div>
+                  <div class="container pb-4">
+                    <button type="button" class="btn btn-dark" onclick="datos()" id="btnDatos">Ingresar alumno</button>
+                  </div>
+            </section>
+            <section class="container">
+                <table class="table">
+                    <thead class="thead-dark">
+                      <tr>
+                        <th scope="col">Ramo</th>
+                        <th scope="col">Nota 1</th>
+                        <th scope="col">Nota 2</th>
+                        <th scope="col">Nota 3</th>
+                        <th scope="col">Promedio</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row"><i class="fa-brands fa-html5"></i> HTML</th>
+                        <td id="nota1HTML">-</td>
+                        <td id="nota2HTML">-</td>
+                        <td id="nota3HTML">-</td>
+                        <td id="promedioHTML">-</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><i class="fa-brands fa-css3"></i> CSS</th>
+                        <td id="nota1CSS">-</td>
+                        <td id="nota2CSS">-</td>
+                        <td id="nota3CSS">-</td>
+                        <td id="promedioCSS">-</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><i class="fa-brands fa-js"></i> Javascript</th>
+                        <td id="nota1JS">-</td>
+                        <td id="nota2JS">-</td>
+                        <td id="nota3JS">-</td>
+                        <td id="promedioJS">-</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="container pb-4">
+                    <button type="button" class="btn btn-dark" onclick="ingresoNotasHTML()" id="btnNotasHTML">Ingresar notas HTML</button>
+                    <button type="button" class="btn btn-dark" onclick="ingresoNotasCSS()" id="btnNotasCSS">Ingresar notas CSS</button>
+                    <button type="button" class="btn btn-dark" onclick="ingresoNotasJS()" id="btnNotasJS">Ingresar notas JS</button>
+                  </div>
+            </section>
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/d2b23a2156.js" crossorigin="anonymous"></script>
+        <script src="./assets/js/index.js" async defer></script>
+    </body>
+</html>
