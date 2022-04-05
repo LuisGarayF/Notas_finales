@@ -62,6 +62,17 @@ function ingresoNotasHTML(nombre){
     promedioHTMLitem.innerHTML = promedioNotasHTML;
     console.log(promedioNotasHTML);
 
+    if( promedioNotasHTML < 40){
+        //promedioNotasHTML.classList.add("reprobado");
+        $('#promedioHTML').addClass('reprobado');
+        console.log("REPROBADO!");
+    } else {
+        if(promedioNotasHTML >= 40){
+        $('#promedioHTML').addClass('aprobado');
+        console.log("APROBADO!");
+        }
+    }
+
     return promedioNotasHTML;
 }
 
@@ -95,6 +106,18 @@ function ingresoNotasCSS(){
     let promedioCSSitem = document.getElementById("promedioCSS");
     promedioCSSitem.innerHTML = promedioNotasCSS;
     console.log(promedioNotasCSS);
+    
+    
+    if( promedioNotasCSS < 40){
+        //promedioNotasCSS.classList.add("reprobado");
+        $('#promedioCSS').addClass('reprobado');
+        console.log("REPROBADO!");
+    } else {
+        if(promedioNotasCSS >= 40){
+        $('#promedioCSS').addClass('aprobado');
+        console.log("APROBADO!");
+        }
+    }
     return promedioNotasCSS;
 }
 
@@ -128,6 +151,17 @@ function ingresoNotasJS(){
     let promedioJSitem = document.getElementById("promedioJS");
     promedioJSitem.innerHTML = promedioNotasJS;
     console.log(promedioNotasJS);
+
+    if( promedioNotasJS < 40){
+        //promedioNotasCSS.classList.add("reprobado");
+        $('#promedioJS').addClass('reprobado');
+        console.log("REPROBADO!");
+    } else {
+        if(promedioNotasJS>=40){
+        $('#promedioJS').addClass('aprobado');
+        console.log("APROBADO!");
+        }
+    }
     return promedioNotasJS;
 }
 

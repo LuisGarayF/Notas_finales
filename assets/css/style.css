@@ -20,6 +20,17 @@ h1{
 
 .items{
     font-weight: 300;
+    text-align: center;
 }
 
+.reprobado{
+    color: #fff;
+    background-color: red;
+    text-align: center;
+}
 
+.aprobado{
+    color: white;
+    background-color:green;
+    text-align: center;
+}
